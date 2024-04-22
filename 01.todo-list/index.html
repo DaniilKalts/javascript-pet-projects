@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple To-Do List with create/remove/update/delete functions."
+    />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="notebook">
+      <header class="notebook__header">
+        <ul class="notebook__header-list">
+          <li class="notebook__header-item">
+            <div class="notebook__header-item__body"></div>
+          </li>
+          <li class="notebook__header-item">
+            <div class="notebook__header-item__body"></div>
+          </li>
+          <li class="notebook__header-item">
+            <div class="notebook__header-item__body"></div>
+          </li>
+          <li class="notebook__header-item">
+            <div class="notebook__header-item__body"></div>
+          </li>
+          <li class="notebook__header-item">
+            <div class="notebook__header-item__body"></div>
+          </li>
+          <li class="notebook__header-item">
+            <div class="notebook__header-item__body"></div>
+          </li>
+          <li class="notebook__header-item">
+            <div class="notebook__header-item__body"></div>
+          </li>
+          <li class="notebook__header-item">
+            <div class="notebook__header-item__body"></div>
+          </li>
+        </ul>
+      </header>
+      <div class="notebook__body">
+        <ul class="notebook__list">
+          <li class="notebook__item notebook__item--prepend" data-item-id="0">
+            <button class="notebook__item-add" aria-label="Add new task button">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 14.0001V8.00012H0V6.00012H6V0.00012207H8V6.00012H14V8.00012H8V14.0001H6Z"
+                  fill="#666666"
+                />
+              </svg>
+            </button>
+            <input
+              class="notebook__item-field"
+              placeholder="Add task"
+              type="text"
+              minlength="5"
+              maxlength="40"
+              name="newItemField"
+              id="newItemField"
+              autocomplete="off"
+            />
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
