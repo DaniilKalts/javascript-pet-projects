@@ -1,0 +1,99 @@
+/* Reset default settings */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fab22e;
+}
+
+/* Style the container */
+.container {
+  width: 400px;
+  max-width: 90vw;
+  height: 400px;
+  max-height: 90vh;
+  padding: 20px 16px;
+  background-color: #000;
+  border-radius: 16px;
+}
+
+.container__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container__emoji {
+  font-size: 80px;
+  margin-bottom: 8px;
+}
+
+.container__emoji--laugh {
+  animation: rotate-emoji 1s;
+}
+
+@keyframes rotate-emoji {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.container__joke {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  max-width: 300px;
+  margin-bottom: 24px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container__joke--fade {
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: 1;
+  }
+}
+
+.container__button {
+  width: 150px;
+  padding: 10px 14px;
+  font-weight: 600;
+  background-color: #fab22e;
+  border-radius: 6px;
+  transition-duration: 0.1s;
+}
+
+.container__button:hover {
+  box-shadow: 0 0 8px 0 #ffffff;
+}
