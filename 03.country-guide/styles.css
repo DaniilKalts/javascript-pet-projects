@@ -1,0 +1,148 @@
+/* Reset default settings */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+svg *[fill] {
+  fill: currentColor;
+}
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+input {
+  border: 0;
+  outline: none;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5e54f6;
+}
+
+/* Style the form */
+.container__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  width: 450px;
+  max-width: 90vw;
+  height: 500px;
+  max-height: 90vh;
+  padding: 40px 16px 24px;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+}
+
+.container__body::after {
+  content: "Country Guide 🌍";
+  position: absolute;
+  top: -8%;
+  left: 50%;
+  translate: -50% 0;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(165, 193, 253);
+  -webkit-text-stroke: 1px #000;
+}
+
+.container__form {
+  width: 100%;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.container__form-inner {
+  position: relative;
+  height: 48px;
+  background-color: #f9fafb;
+}
+
+.container__form-icon {
+  position: absolute;
+  top: 35%;
+  left: 12px;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  color: #6b7280;
+}
+
+.container__form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 82px 0 34px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.container__form-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 48px;
+  padding: 0 24px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #1a56db;
+  border-radius: 6px;
+  transition-duration: 0.2s;
+}
+
+.container__form-button:active {
+  box-shadow: 0 0 0 2px #6086d9;
+}
+
+.container__country-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.container__country-info__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__country-info__flag {
+  margin-bottom: 4px;
+}
+
+.container__country-info__name {
+  font-size: 28px;
+}
+
+.container__country-info__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
